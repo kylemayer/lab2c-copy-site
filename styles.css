@@ -1,5 +1,6 @@
-body {
-    background-color: ivory;
+body, html {
+    height: 100vh;
+
 }
 
 * {
@@ -7,15 +8,19 @@ body {
 
 }
 
+
+
+
 main {
-    
+    display: grid;
+    grid-template-rows: 10% 40% 30% 20%;
     width: 100%;
     height: 100%;
 
 }
 .top-nav {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
     height: 75px;
     align-items: center;
 
@@ -29,7 +34,8 @@ div {
 
 .middle {
     display: grid;
-    grid-template-rows: .5fr 3fr;
+    justify-content: center;
+    grid-template-rows: 1fr 3fr;
     background-image: url("./main.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -38,28 +44,46 @@ div {
     align-items: center;
     background-size: cover;
     text-align: center;
+    color: white;
 
 }
 
 .options {
     display: grid;
-    grid-template-rows: .25fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(236, 226, 226);
     height: 200px;
     text-align: center;
+
 }
 
 .left-op {
-    background-color: green;
+    background-color: white;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
 }
 
 .mid-op {
-    background-color: green;
-
+    background-color: white;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
 }
 
 .right-op {
-    background-color: green;
+    background-color: white;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
 
 }
 
@@ -70,7 +94,8 @@ div {
 }
 
 
-.footer {
+.foot {
     height: 150px;
     text-align: center;
 }
+

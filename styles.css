@@ -1,6 +1,5 @@
 body {
-    display: flex;
-    justify-content: center;
+    background-color: ivory;
 }
 
 * {
@@ -19,7 +18,6 @@ main {
     grid-template-columns: 1fr 2fr 1fr;
     height: 75px;
     align-items: center;
- 
 
 }
 
@@ -39,23 +37,40 @@ div {
     width: 100%;
     align-items: center;
     background-size: cover;
+    text-align: center;
 
 }
 
 .options {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: lightblue;
+    grid-template-rows: .25fr 1fr;
+    background-color: rgb(236, 226, 226);
     height: 200px;
+    text-align: center;
 }
 
-.bottom-nav {
+.left-op {
     background-color: green;
+}
+
+.mid-op {
+    background-color: green;
+
+}
+
+.right-op {
+    background-color: green;
+
+}
+
+
+.bottom-nav {
     height: 150px;
+    text-align: center;
 }
 
 
 .footer {
-    background-color: silver;
     height: 150px;
+    text-align: center;
 }
